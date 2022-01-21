@@ -3,7 +3,6 @@ import React from "react";
 // no need to modify anything in here. The second test is looking for the returned JSX from this component
 class ExampleComponent extends React.Component {
   render() {
-    console.log("render() ...")
     return (
       <div className="example">
         <img
@@ -17,9 +16,11 @@ class ExampleComponent extends React.Component {
   }
 
   componentDidMount(){
-    console.log("mount")
-    console.log("componentDidMount()")
     console.log("this component has mounted already")
+  }
+  
+  componentWillUnmount(){
+    console.log("good bay my friend!")
   }
 }
 
